@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="typingtime" ng-controller="HomeController">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingTime</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/typingtime.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/typingtime.css">
+    <script src="js/velocity.min.js"></script>
+</head>
+
+<body>
+    <section id="code-container">
+        <pre class="code"><ol>
+<li class="raw">&lt;h1&gt;Hello, World!&lt;/h1&gt;</li><li class="raw milestone">&lt;p&gt;This is a public service announcement&lt;/p&gt;</li><li class="raw">&lt;div style="width: 50px; height: 50px; background: red; color: white;"&gt;</li><li class="raw">Hehe</li><li class="raw milestone">&lt;/div&gt;</li>
+           </ol></pre>
+    </section>
+
+
+    <section id="iframe-container">
+        <div id="color-overlay"></div>
+        <iframe id="output-window"></iframe>
+    </section>
+
+    <script>
+        $(function () {
+            TypingTime.init();
+        });
+    </script>
+    <!--<script src="bower_components/angular/angular.min.js"></script>
+    <script src="components/typingtest/typingtime.js"></script>-->
+</body>
+
+</html>
