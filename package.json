@@ -1,0 +1,41 @@
+{
+  "name": "typingti.me",
+  "version": "0.0.0",
+  "description": "Typing Time!",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test:watch": "npm run test -- --watch"
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "redux": "*",
+    "react-redux": "*",
+    "immutable": "*",
+    "react-hotkey": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-util": "*",
+    "gulp-concat": "*",
+    "vinyl-source-stream": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "redux-devtools": "*",
+    "babelify": "*",
+    "babel": "*",
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "mocha": "*",
+    "chai": "*",
+    "chai-immutable": "*",
+    "classnames": "*",
+    "gulp-minify": "*",
+    "gulp-streamify": "*"
+  },
+  "babel": {
+    "presets": ["es2015", "react"]
+  }
+}
